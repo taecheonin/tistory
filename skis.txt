@@ -1,0 +1,14 @@
+https://tistory.github.io/document-tistory-skin/
+
+티스토리 스킨 가이드
+다양한 스킨 치환자 사용 예시 가이드
+
+파일구조
+SKIN ─┬─ index.xml
+      ├─ skin.html
+      ├─ style.css
+      ├─ preview.gif
+      └─ images ─┬─ script.js
+                 └─ background.jpg
+
+(이 파일은 티스토리 스킨 가이드 요약본입니다. 실제 스킨 파일은 skin/ 폴더를 참고하세요.)
