@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+
+<head>
+    <title>[##_page_title_##] :: [##_title_##]</title>
+    <meta name="title" content="[##_page_title_##] :: [##_title_##]" />
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+</head>
+
+<body id="[##_body_id_##]">
+    <s_t3>
+        <div id="wrap">
+            <div id="sidebar">
+                <h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
+                <s_sidebar>
+                    <s_sidebar_element>
+                        <div class="widget category">
+                            [##_category_list_##]
+                        </div>
+                    </s_sidebar_element>
+                    <s_sidebar_element>
+                        <div class="widget counter text-center">
+                            <span class="yesterday">[##_count_yesterday_##]</span> /
+                            <span class="today">[##_count_today_##]</span> /
+                            <span class="total">[##_count_total_##]</span>
+                        </div>
+                    </s_sidebar_element>
+                    <s_sidebar_element>
+                        <div class="widget search text-center">
+                            <s_search>
+                                <label for="[##_search_name_##]" class="screen_out">블로그 내 검색</label>
+                                <input id="[##_search_name_##]" class="search" placeholder="press enter to search…"
+                                    type="text" name="[##_search_name_##]" value="[##_search_text_##]"
+                                    onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" />
+                            </s_search>
+                        </div>
+                    </s_sidebar_element>
+                </s_sidebar>
+            </div>
+
+            <div id="content">
+                <div id="content-inner">
+                    <s_article_rep>
+                        <div id="head">
+                            <h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+                            <div class="date">[##_article_rep_date_##]</div>
+                        </div>
+                        <div id="body" class="entry">
+                            <div class="article" id="article-view">
+                                [##_article_rep_desc_##]
+                            </div>
+                            <s_rp>
+                                [##_comment_group_##]
+                            </s_rp>
+                        </div>
+                    </s_article_rep>
+
+                    <s_guest>
+                        <div id="body" class="entry">
+                            <div id="communicate">
+                                [##_guestbook_group_##]
+                            </div>
+                        </div>
+                    </s_guest>
+
+                    <div id="paging">
+                        <s_paging>
+                            <a [##_prev_page_##] class="prev [##_no_more_prev_##]">PREV</a>
+                            <s_paging_rep><a class="numbox" [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+                            </s_paging_rep>
+                            <a [##_next_page_##] class="next [##_no_more_next_##]">NEXT</a>
+                        </s_paging>
+                    </div>
+
+                    <div id="foot">
+                        <div class="powered">Powered by <a href="http://www.tistory.com/" target="_blank">Tistory</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </s_t3>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./images/common.js"></script>
+</body>
+
+</html>
