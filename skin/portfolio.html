@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>[##_page_title_##]</title>
+    <meta name="title" content="[##_page_title_##] :: [##_title_##]" />
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+    <link rel="stylesheet" href="https://t1.daumcdn.net/tistory_admin/static/font/SpoqaHanSans/SpoqaHanSans.css" />
+    <link rel="stylesheet" href="https://t1.daumcdn.net/tistory_admin/static/font/icomoon/icomoon.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./images/slick.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="./images/slick.js"></script>
+    <script src="./images/common.js"></script>
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+    <script>
+        (function () {
+            var test = vhCheck();
+        }());
+    </script>
+</head>
+
+<body id="[##_body_id_##]" class="[##_var_colorSet_##]">
+    <s_t3>
+        <div id="wrap">
+            [##_revenue_list_upper_##]
+            <header class="box_header">
+                <h1 class="title_logo">
+                    <a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo">
+                        <s_if_var_logoImage>
+                            <img src="[##_var_logoImage_##]" class="img_logo" alt="[##_title_##]">
+                        </s_if_var_logoImage>
+                        <s_not_var_logoImage>
+                            [##_title_##]
+                        </s_not_var_logoImage>
+                    </a>
+                </h1>
+                <button class="btn_search"></button>
+                <button type="button" class="btn_menu" title="메뉴"><span class="blind">메뉴</span></button>
+            </header>
+
+            <div id="container">
+                <aside class="area_sidebar thema_apply" style="display: none;">
+                    <div class="inner_sidebar">
+                        <div class="sidebar_header">
+                            <h1 class="title_logo">
+                                <a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo">
+                                    [##_title_##]
+                                </a>
+                            </h1>
+                            <button type="button" class="btn_close" title="닫기"><span class="icon-Close"></span></button>
+                        </div>
+                        <div class="sidebar_contents">
+                            <div class="sidebar_menu">
+                                <s_sidebar>
+                                    <s_sidebar_element>
+                                        <div class="sidebar_left">
+                                            <div class="box_gnb">
+                                                <nav>[##_category_list_##]</nav>
+                                            </div>
+                                        </div>
+                                    </s_sidebar_element>
+                                </s_sidebar>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <main id="main">
+                    <s_article_rep>
+                        <s_permalink_article_rep>
+                            <div class="area_article">
+                                <div class="article_header type_article_header_cover">
+                                    <div class="inner_header" <s_article_rep_thumbnail>
+                                        style="background-image:url('[##_article_rep_thumbnail_url_##]')"
+                                        </s_article_rep_thumbnail>>
+                                        <div class="info_text">
+                                            <strong class="title_post">[##_article_rep_title_##]</strong>
+                                            <p class="info"><span class="date">[##_article_rep_date_##]</span>・<span>[##_article_rep_category_##]</span>[##_s_ad_isolation_##]
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="article_view" id="article-view">
+                                    [##_article_rep_desc_##]
+                                </div>
+                                <div class="article_content">
+                                    <s_tag_label>
+                                        <div class="area_tag">
+                                            <h3 class="title_tag">TAG</h3>
+                                            <div class="tag_content thema_apply">[##_tag_label_rep_##]</div>
+                                        </div>
+                                    </s_tag_label>
+                                    <s_article_related>
+                                        <div class="area_related">
+                                            <h3 class="title_related">관련글</h3>
+                                            <ul class="list_related">
+                                                <s_article_related_rep>
+                                                    <li class="item_related">
+                                                        <a href="[##_article_related_rep_link_##]" class="link_related">
+                                                            <span class="thumnail item-thumbnail"
+                                                                style="background-image:url('<s_article_related_rep_thumbnail>[##_article_related_rep_thumbnail_link_##]</s_article_related_rep_thumbnail>')"></span>
+                                                            <div class="box_content">
+                                                                <strong>[##_article_related_rep_title_##]</strong>
+                                                                <span class="info">[##_article_related_rep_date_##]</span>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </s_article_related_rep>
+                                            </ul>
+                                        </div>
+                                    </s_article_related>
+                                    <div class="area_reply">
+                                        <div class="reply_content">
+                                            <s_rp>[##_comment_group_##]</s_rp>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </s_permalink_article_rep>
+                    </s_article_rep>
+
+                    <s_list>
+                        <div class="area_category">
+                            <h2 class="title_section">[##_list_conform_##]<span>([##_list_count_##])</span></h2>
+                            <ul class="list_category">
+                                <s_list_rep>
+                                    <li class="item_category">
+                                        <a href="[##_list_rep_link_##]" class="link_category">
+                                            <span class="thumnail item-thumbnail"
+                                                <s_list_rep_thumbnail>style="background-image:url('https://i1.daumcdn.net/thumb/R750x0.fwebp.q85/?fname=[##_list_rep_thumbnail_url_##]')"
+                                                </s_list_rep_thumbnail>></span>
+                                            <div class="info">
+                                                <strong class="name">[##_list_rep_title_##]</strong>
+                                                <p class="text summary">[##_list_rep_summary_##]</p>
+                                                <span class="date">[##_list_rep_regdate_##]</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </s_list_rep>
+                            </ul>
+                        </div>
+                    </s_list>
+
+                    <s_tag>
+                        <div class="area_common">
+                            <h3 class="title_common">태그</h3>
+                            <div class="tag_zone">
+                                <s_tag_rep>
+                                    <a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a>
+                                </s_tag_rep>
+                            </div>
+                        </div>
+                    </s_tag>
+
+                    <s_guest>
+                        <div class="area_common">[##_guestbook_group_##]</div>
+                    </s_guest>
+
+                    <s_paging>
+                        <div class="area_paging">
+                            <a [##_prev_page_##] class="link_page link_prev [##_no_more_prev_##]">
+                                <span class="screen_out">이전</span></a>
+                            <div class="paging_num thema_apply">
+                                <s_paging_rep>
+                                    <a [##_paging_rep_link_##] class="link_num">[##_paging_rep_link_num_##]</a>
+                                </s_paging_rep>
+                            </div>
+                            <a [##_next_page_##] class="link_page link_next [##_no_more_next_##]">
+                                <span class="screen_out">다음</span></a>
+                        </div>
+                    </s_paging>
+                </main>
+            </div>
+
+            [##_revenue_list_lower_##]
+            <footer id="footer">
+                <div class="inner_footer">
+                    <address>[##_var_footerCopyright_##]</address>
+                </div>
+            </footer>
+        </div>
+    </s_t3>
+</body>
+
+</html>
